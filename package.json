@@ -1,5 +1,5 @@
 {
-  "name": "@zachwatkins/make",
+  "name": "zmake",
   "version": "1.0.0",
   "description": "CLI app for file generation.",
   "main": "index.js",
