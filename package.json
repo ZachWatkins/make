@@ -1,0 +1,36 @@
+{
+  "name": "@zachwatkins/make",
+  "version": "1.0.0",
+  "description": "CLI app for file generation.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "prettier --check --ignore-path .config/.prettierignore .",
+    "format": "prettier --write --ignore-path .config/.prettierignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachwatkins/make.git"
+  },
+  "keywords": [
+    "cli",
+    "filegen"
+  ],
+  "author": "Zachary K. Watkins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zachwatkins/make/issues"
+  },
+  "homepage": "https://github.com/zachwatkins/make#readme",
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "husky": "^8.0.3",
+    "jest": "^29.7.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3"
+  },
+  "lint-staged": {
+    "**.{md,js,json,ts,tsx,yml,yaml}": [
+      "npm run format"
+    ]
+  }
+}
