@@ -9,7 +9,7 @@
 import fs from "fs";
 import path from "path";
 import readline from "readline";
-import * as pkg from "./package.json";
+import pkg from "./package.json" assert { type: "json" };
 
 const VERSION = pkg.version;
 const HELP = `A tool for generating commonly needed files.
