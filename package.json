@@ -35,7 +35,7 @@
     ]
   },
   "bin": {
-    "make": "./index.js"
+    "zmake": "index.js"
   },
   "private": true
 }
