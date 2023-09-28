@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 /**
  * Command line application to generate commonly needed files for my projects.
  * @author    Zachary K. Watkins <zwatkins.it@gmail.com>
