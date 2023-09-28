@@ -9,7 +9,14 @@
 import fs from "fs";
 import path from "path";
 import readline from "readline";
-import pkg from "./package.json" assert { type: "json" };
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const packageJson = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "package.json"), "utf8"),
+);
 
 const VERSION = pkg.version;
 const HELP = `A tool for generating commonly needed files.
