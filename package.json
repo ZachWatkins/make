@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "CLI app for file generation.",
   "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
     "lint": "prettier --check --ignore-path .config/.prettierignore .",
     "format": "prettier --write --ignore-path .config/.prettierignore ."
