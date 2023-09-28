@@ -5,6 +5,7 @@
   "editor.formatOnSaveMode": "file",
   "editor.wordWrap": "on",
   "prettier.ignorePath": ".config/.prettierignore",
+  "prettier.configPath": ".config/.prettierrc.json",
   "phpCodeSniffer.autoExecutable": true,
   "files.eol": "\n",
   "files.insertFinalNewline": true,
