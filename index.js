@@ -9,7 +9,9 @@
 import fs from "fs";
 import path from "path";
 import readline from "readline";
+import * as pkg from "./package.json";
 
+const VERSION = pkg.version;
 const HELP = `A tool for generating commonly needed files.
   Usage: npx zmake [options]
 
@@ -30,5 +32,10 @@ if (
   process.argv.includes("--help")
 ) {
   console.log(HELP);
+  process.exit(0);
+}
+
+if (process.argv.includes("-v") || process.argv.includes("--version")) {
+  console.log(VERSION);
   process.exit(0);
 }
